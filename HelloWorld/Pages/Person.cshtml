@@ -1,0 +1,14 @@
+﻿@page
+@using HelloWorld.Model
+@model HelloWorld.Pages.PersonModel
+@{
+}
+
+
+@*Betyder vi kan skrive c# code her*@
+@{
+    foreach ( Person person in Model.People)
+    {
+        <li>@person.Firstname @person.Lastname</li>
+    }
+}
